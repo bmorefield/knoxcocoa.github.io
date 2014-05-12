@@ -5,6 +5,14 @@ body {
     font-size: 14pt;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
 .container {
     margin: 0 auto;
     width: 700px;
