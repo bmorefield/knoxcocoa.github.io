@@ -13,12 +13,29 @@ a:hover {
     color: blue;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-color: white;
+}
+
 .container {
     margin: 0 auto;
     width: 700px;
 }
 
-/* iPhone 5 screen */
+/* Banner 
+--------- */
+
+#cocoaicon {
+    float: left;
+    height: 128px;
+    margin-right: 20px;
+    width: 128px;
+}
+
+/* iPhone 5 screen
+------------------ */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
@@ -26,8 +43,19 @@ body {
     font-size: 12pt;
 }
 
+h1 {
+    font-size: 18pt;
+}
+
 .container {
     width: 100%;
+}
+
+#cocoaicon {
+    float: left;
+    height: 64px;
+    margin-right: 20px;
+    width: 64px;
 }
 
 }
