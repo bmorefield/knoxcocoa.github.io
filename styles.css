@@ -1,5 +1,5 @@
 body {
-    background: url(darkfishskin.png) repeat;
+    background-color: rgb(72, 72, 72);
     color: white;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12pt;
@@ -73,17 +73,6 @@ p {
     height: 64px;
     margin-right: 20px;
     width: 64px;
-}
-
-}
-
-/* Retina screen 
----------------- */
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-
-body {
-    background: url(darkfishskin@2x.png) repeat;
 }
 
 }
