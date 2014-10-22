@@ -6,7 +6,8 @@ body {
 }
 
 a {
-    color: white;
+    color: rgb(254, 196, 48);
+    text-decoration: none;
 }
 
 a:hover {
