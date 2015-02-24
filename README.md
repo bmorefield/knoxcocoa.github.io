@@ -1,3 +1,3 @@
-# Knoxville CocoaHeads website
+## Knoxville CocoaHeads website
 
-Files for the website. CSS contains `media` section for mobile devices.
+Files for the website. Uses [Bootstrap](http://getbootstrap.com) for a fully responsive design.
