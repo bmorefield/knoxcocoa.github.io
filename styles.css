@@ -21,13 +21,22 @@ hr {
     background-color: gray;
 }
 
+#logo {
+    height: 128px;
+    width: 128px;
+}
+
 /* Media 
 ---------------------------------------------- */
 
 @media (min-width: 750px) {
     
-    .container {
-        width: 750px;
-    }
+.container {
+    width: 750px;
+}
+
+#logo {
+    margin-right: 20px;
+}
 
 }
