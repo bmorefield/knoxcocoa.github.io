@@ -29,7 +29,7 @@ hr {
 /* Media 
 ---------------------------------------------- */
 
-@media (min-width: 750px) {
+@media (min-width: 750px) { /* Desktop and similar screens */
     
 .container {
     width: 750px;
@@ -40,3 +40,20 @@ hr {
 }
 
 }
+
+@media (max-width: 320px) { /* iPhone 5 and similar screens */
+
+h1 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.0em;
+}
+
+p,ul,li {
+    font-size: 0.9em;
+}
+
+}
+
