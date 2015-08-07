@@ -1,3 +1,5 @@
+/* Styles
+---------------------------------------------- */
 
 body {
     background-color: rgb(72, 72, 72);;
@@ -21,13 +23,17 @@ hr {
     background-color: gray;
 }
 
+label {
+    font-weight: normal;
+}
+
 #logo {
     height: 128px;
     margin-top: 10px;
     width: 128px;
 }
 
-/* Media 
+/* Media Styles
 ---------------------------------------------- */
 
 @media (min-width: 750px) { /* Desktop and similar screens */
