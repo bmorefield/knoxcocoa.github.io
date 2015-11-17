@@ -8,9 +8,8 @@
     <title>Knoxville CocoaHeads</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <link rel="stylesheet" type="text/css" href="">
 
     <link rel="apple-touch-icon" sizes="76x76" href="./images/touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="./images/touch-icon-120x120.png">
@@ -26,13 +25,11 @@
 <!-- Header -->
 
 <div class="row">
-    <div class="media">
-        <div class="media-left">
+    <div class="col-md-12">
+        <p class="text-center">
             <img src="./images/cocoaheads.png" id="logo">
-        </div>
-        <div class="media-body media-middle">
-            <h1>Knoxville CocoaHeads</h1>
-        </div>
+        </p>
+        <h1 class="text-center">Knoxville CocoaHeads</h1>
     </div>
 </div>
 
@@ -40,39 +37,44 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h3><samp>Welcome to the CocoaHeads of Knoxville, TN!</samp></h3>
-        <p>CocoaHeads is a group devoted to discussion of Apple's Cocoa and Cocoa Touch Frameworks for programming on OS X (Mac) and iOS (iPhone, iPad). During monthly meetings, members offer tutorials, present their projects, share app ideas, and provide advice to other programmers. Whether you are an experienced developer or just getting started, Knoxville CocoaHeads is a great way to stay current with the latest technologies and improve your programming skills. For more information about the history of CocoaHeads, visit the organization's global website at <a href="http://cocoaheads.org">http://cocoaheads.org</a>.</p>
-        <hr>
+        <p class="text-center">
+            <a href="https://twitter.com/knoxcocoa" title="Twitter" target="_blank">
+                <i class="fa fa-twitter fa-2x"></i>
+            </a>
+            &nbsp;
+            <a href="slack.html" title="Slack" target="_blank">
+                <i class="fa fa-slack fa-2x"></i>
+            </a>
+            &nbsp;
+            <a href="http://www.meetup.com/knoxcocoa/" title="Meetup" target="_blank">
+                <i class="fa fa-users fa-2x"></i>
+            </a>
+            &nbsp;
+            <a href="https://github.com/knoxcocoa" title="GitHub" target="_blank">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+            &nbsp;
+            <a href="https://www.linkedin.com/grp/home?gid=8311154" title="Linkedin" target="_blank">
+                <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+            &nbsp;
+            <a href="mailto:info@knoxcocoa.org" title="Email">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        </p>
+        <p>Welcome to the CocoaHeads of Knoxville, TN! CocoaHeads is a group devoted to discussion of Apple's Cocoa and Cocoa Touch Frameworks for programming on OS X (Mac) and iOS (iPhone, iPad). During monthly meetings, members offer tutorials, present their projects, share app ideas, and provide advice to other programmers. Whether you are an experienced developer or just getting started, Knoxville CocoaHeads is a great way to stay current with the latest technologies and improve your programming skills. For more information about the history of CocoaHeads, visit the organization's global website at <a href="http://cocoaheads.org">http://cocoaheads.org</a>.</p>
     </div>
 </div>
 
-<!-- Location, Meetup.com, Twitter.com, and GitHub.com -->
+<!-- Summary -->
 
 <div class="row">
     <div class="col-md-12">
-        <h3><samp>CLLocation</samp></h3>
         <p>
         Monthly meetings are every 3rd Tuesday from 7-9 pm at the <a href="http://knoxec.com">Knoxville Entrepreneur Center (KEC)</a> located between Subway and Soccer Taco in Market Square of downtown Knoxville. <a href="http://www.cityofknoxville.org/newcomers/parking.asp">Parking decks</a> are free after 6 pm.
         </p>
-        
-        <h3><samp>SLServiceType</samp></h3>
-        <p>
-        <a href="http://www.meetup.com/knoxville-cocoaheads" target="_blank">Meetup</a> - To show your support, please join the group on Meetup where future events and topics will be posted. An <a href="http://www.meetup.com/knoxcocoa/events/" target="_blank">events calendar</a> is also available on our Meetup page.
-        </p>
-        <p>
-        <a href="slack.html">CocoaHeads Slack invite</a> - Submit your information to join the CocoaHeads community on Slack. Knoxville CocoaHeads should join the "knoxcocoa" channel for local discussion and news.
-        </p>
-        <p>
-        <a href="https://github.com/knoxcocoa" target="_blank">GitHub</a> - We also have a GitHub page for sharing code, demos, presentations, etc. This website is actually being hosted on GitHub, free of charge!
-        </p>
-        <p>
-        <a href="https://www.linkedin.com/grp/home?gid=8311154" target="_blank">Linkedin</a> - Join the group on Linkedin for more discussions.
-        </p>
-        <p>
-        <a href="https://twitter.com/knoxcocoa" target="_blank">Twitter</a> - Follow us on Twitter for upcoming meetings and local developer events.
-        </p>
-    </div>  <!-- end col Location, Meetup, etc. -->
-</div>  <!-- end row Location, Meetup, etc. -->
+    </div>
+</div>
 
 <!-- Twitter Feed -->
 
@@ -82,8 +84,8 @@
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         </script>
         <hr>
-    </div>  <!-- end row Twitter Feed -->
-</div>  <!-- end col Twitter Feed -->
+    </div>
+</div>
 
 <!-- Monthly Links -->
 
@@ -96,6 +98,18 @@
         Submit your links <a href="https://github.com/knoxcocoa/knoxcocoa.github.io">here</a>
         </em></small>
         </p>
+
+        <p>November 2015</p>
+
+        <ul>
+            <li><a href="http://www.raywenderlich.com/111071/paintcode-review">PaintCode Review</a>: dynamic graphics made easy</li>
+            <li>Final analysis by <a href="http://www.sunsetlakesoftware.com/2015/11/03/what-we-learned-rewriting-our-robotic-control-software-swift">Sunset Lake Software</a> of rewriting Objective-C software in Swift</li>
+            <li>How to Write Without <a href="http://blog.codinghorror.com/how-to-write-without-writing/">Writing</a></li>
+            <li><a href="https://littlebitesofcocoa.com/111-reachability-swift">Reachability</a> now available in Swift</li>
+            <li><a href="https://realm.io/news/sash-zats-gameplaykit-beyond-games/">GameplayKit</a>: Beyond Games</li>
+            <li><a href="https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training">Self-paced training</a> to learn Git and GitHub</li>
+            <li>In-depth <a href="http://www.polygon.com/features/2015/10/26/9604068/apple-tv-app-size-limit-technology-slicing-tags-200-mb">article</a> about requirements and limits of Apple TV apps</li>
+        </ul>
 
         <p>October 2015</p>
 
