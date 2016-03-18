@@ -1,0 +1,46 @@
+/* Styles for Banner
+---------------------------------------------- */
+
+a {
+    color: #ACF2FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(18, 79, 138);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 90%;
+}
+
+h1 {
+    font-size: 46pt;
+}
+
+h2 {
+    font-size: 36pt;
+}
+
+i {
+    vertical-align: middle;
+}
+
+#logo {
+    height: 256px;
+    width: 256px;
+}
+
+.vertical-align {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
