@@ -1,16 +1,6 @@
 /* Styles for Banner
 ---------------------------------------------- */
 
-a {
-    color: #ACF2FF;
-    text-decoration: none;
-}
-
-a:hover {
-    color: yellow;
-    text-decoration: none;
-}
-
 body {
     background-color: rgb(18, 79, 138);
     color: white;
@@ -18,15 +8,15 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
 }
 
 h1 {
-    font-size: 46pt;
+    font-size: 38pt;
 }
 
 h2 {
-    font-size: 36pt;
+    font-size: 28pt;
 }
 
 i {
