@@ -2,9 +2,10 @@
 ---------------------------------------------- */
 
 body {
-    background-color: rgb(18, 79, 138);
+    background-color: #FC3832;
     color: white;
     letter-spacing: 1px;
+    text-shadow: 1px 2px rgb(73, 73, 73);
 }
 
 h1 {

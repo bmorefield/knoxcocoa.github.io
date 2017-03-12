@@ -1,319 +1,79 @@
+---
+---
+
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-
-<head>
+  <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Knoxville CocoaHeads</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    <link rel="apple-touch-icon" sizes="76x76" href="./images/touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./images/touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./images/touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/touch-icon-180x180.png">
-</head>
+  <body>
 
-<body>
+    <div class="container">
 
-<!-- Page Content -->
-<div class="container">
+      <div class="jumbotron">
+        <img src="cocoahead.svg" alt="logo" width=300>
+        <h1>Knoxville CocoaHeads</h1>
+      </div>
 
-<!-- Header -->
+      <p class="text-center">
+        <a href="https://twitter.com/knoxcocoa" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="slack.html" title="Slack" target="_blank"><i class="fa fa-slack fa-2x"></i></a>
+        <a href="http://www.meetup.com/knoxcocoa/" title="Meetup" target="_blank"><i class="fa fa-users fa-2x"></i></a>
+        <a href="https://github.com/knoxcocoa" title="GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/grp/home?gid=8311154" title="Linkedin" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="mailto:info@knoxcocoa.org" title="Email"><i class="fa fa-envelope fa-2x"></i></a>
+      </p>
 
-<div class="row">
-    <div class="col-md-12">
-        <p class="text-center">
-            <img src="./images/cocoaheads.png" id="logo">
-        </p>
-        <h1 class="text-center">Knoxville CocoaHeads</h1>
+      <p>Welcome to the CocoaHeads of Knoxville, TN! CocoaHeads is a group
+      devoted to discussion of Apple's Cocoa and Cocoa Touch Frameworks for
+      programming on OS X (Mac) and iOS (iPhone, iPad). During monthly
+      meetings, members offer tutorials, present their projects, share app
+      ideas, and provide advice to other programmers. Whether you are an
+      experienced developer or just getting started, Knoxville CocoaHeads is a
+      great way to stay current with the latest technologies and improve your
+      programming skills. The global CocoaHeads site is available at
+      cocoaheads.org</p>
+
+      <p>Monthly meetings are every 3rd Tuesday from 7-9 pm at the Knoxville
+      Entrepreneur Center (KEC) located between Subway and Soccer Taco in
+      Market Square of downtown Knoxville. Parking decks are free after 6
+      pm.</p>
+
+      <hr>
+
+      {% for year in site.years %}
+          {% if year.title == 2017 %}
+              {{ year.content }}
+          {% endif %}
+      {% endfor %}
+
+      <hr>
+
+      <h2>Archive</h2>
+
+      {% for year in site.years reversed %}
+          {% if year.title != 2017 %}
+            <a class="btn btn-default" href="{{ site.url }}{{ year.url }}" role="button" style="width:100px;">{{ year.title }}</a>
+            &nbsp;
+          {% endif %}
+      {% endfor %}
+
+      <hr>
+      
+      <p class="text-center"><small>Knoxville CocoaHeads since 2014</small></p>
+
     </div>
-</div>
 
-<!-- Introduction -->
-
-<div class="row">
-    <div class="col-md-12">
-        <p class="text-center">
-            <a href="https://twitter.com/knoxcocoa" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-            &nbsp;
-            <a href="slack.html" title="Slack" target="_blank"><i class="fa fa-slack fa-2x"></i></a>
-            &nbsp;
-            <a href="http://www.meetup.com/knoxcocoa/" title="Meetup" target="_blank"><i class="fa fa-users fa-2x"></i></a>
-            &nbsp;
-            <a href="https://github.com/knoxcocoa" title="GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-            &nbsp;
-            <a href="https://www.linkedin.com/grp/home?gid=8311154" title="Linkedin" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-            &nbsp;
-            <a href="mailto:info@knoxcocoa.org" title="Email"><i class="fa fa-envelope fa-2x"></i></a>
-        </p>
-        <p>Welcome to the CocoaHeads of Knoxville, TN! CocoaHeads is a group devoted to discussion of Apple's Cocoa and Cocoa Touch Frameworks for programming on OS X (Mac) and iOS (iPhone, iPad). During monthly meetings, members offer tutorials, present their projects, share app ideas, and provide advice to other programmers. Whether you are an experienced developer or just getting started, Knoxville CocoaHeads is a great way to stay current with the latest technologies and improve your programming skills. The global CocoaHeads site is available at <a href="http://cocoaheads.org">cocoaheads.org</a></p>
-    </div>
-</div>
-
-<!-- Group Information -->
-
-<div class="row">
-    <div class="col-md-12">
-        <p>
-        Monthly meetings are every 3rd Tuesday from 7-9 pm at the <a href="http://knoxec.com">Knoxville Entrepreneur Center (KEC)</a> located between Subway and Soccer Taco in Market Square of downtown Knoxville. <a href="http://www.cityofknoxville.org/newcomers/parking.asp">Parking decks</a> are free after 6 pm.
-        </p>
-    </div>
-</div>
-
-<!-- Monthly Notes -->
-
-<div class="row">
-    <div class="col-md-12">
-        <hr>
-        
-        <h3><samp>Monthly Notes</samp></h3>
-
-        <p><small>Contribute to the monthly notes on <a href="https://github.com/knoxcocoa/knoxcocoa.github.io" target="_blank">GitHub</a></small></p>
-
-        <p><samp>{ March 2017 }</samp> | RSVP on <a href="http://www.meetup.com/knoxcocoa/">Meetup</a></p>
-
-        <p>Coming soon...</p>
-
-        <p><samp>{ February 2017 }</samp></p>
-
-        <p>To support the local developers community, we encourage everyone to
-        attend the KnoxDevs quarterly meetup on February 2nd. So this month
-        there will be no CocoaHeads meeting, but we'll resume our regular
-        monthly meeting in March.</p>
-
-        <p><samp>{ January 2017 }</samp></p>
-        
-        <p>This month we'll discuss the latest news in Swift programming along
-        with an overview of the Weather API provided by the Weather
-        Underground. More information about this API is available at <a href="https://www.wunderground.com/weather/api">https://www.wunderground.com/weather/api</a></p>
-
-        <ul>
-          <li>Deadline for <a href="http://www.codestock.org">CodeStock</a> submissions extended to Friday, Jan. 20th</li>
-          <li>KnoxDevs quarterly <a href="https://www.meetup.com/KnoxDevs/events/236803290/">meetup</a> on Thursday, February 2</li>
-          <li>Chris Lattner leaving <a href="https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20170109/030063.html">Apple</a> for <a href="https://www.tesla.com/blog/welcome-chris-lattner">Tesla</a></li>
-          <li><a href="http://nsdateformatter.com">NSDateFormatter.com</a> written in Swift 3, Vapor, and deployed via Heroku</li>
-          <li><a href="http://www.appwage.com">AppWage</a> is a simple, powerful sales manager for macOS</li>
-          <li><a href="https://iosdev.tools">iOS Dev Tools</a> is a massive list of developer tools, services, etc.</li>
-          <li>Generate Swift model objects from JSON data with <a href="http://www.json4swift.com">Json4Swift</a></li>
-        </ul>
-        
-        <p><samp>{ December 2016 }</samp></p>
-
-        <p>This month is an open discussion. People of all skill levels are
-        encouraged to ask questions about Mac, iPhone, iPad, Apple Watch, Apple
-        TV, or Swift. We will also discuss topics for 2017 so let us know what
-        you would like to learn at a future CocoaHeads meeting. Notice that this
-        month's meeting is one week earlier due to the holidays.</p>
-
-        <ul>
-          <li><a href="https://www.knitelius.com/2016/12/12/swift-for-beans-java-developers-view-on-swift/">Swift for Beans</a> a Java developers view on Swift</li>
-          <li><a href="https://www.bignerdranch.com/blog/server-side-swift-with-vapor/">Server-Side Swift with Vapor</a></li>
-          <li><a href="https://medium.com/@skoli/using-realm-and-charts-with-swift-3-in-ios-10-40c42e3838c0#.ychq05kf9">Using Realm and Charts</a> with Swift 3 in iOS 10</li>
-          <li>Article about using dates in Swift, <a href="http://www.atomicbird.com/blog/date-math-is-hard-lets-do-it-tomorrow">Date Math is Hard</a></li>
-          <li>Realm <a href="https://realm.io/news/realm-adventure-schedule-2016/">adventure calendar 2016</a></li>
-          <li>Ultimate guide to <a href="https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions">iPhone resolutions</a></li>
-          <li>Hackintosh guides available at <a href="https://www.tonymacx86.com">tonymacx86.com</a></li>
-        </ul>
-
-        <p><samp>{ November 2016 }</samp></p>
-        
-        <p>This month Bill Morefield <a href="https://twitter.com/bmorefield">@bmorefield</a> will demonstrate the basics
-        of what Electron is and how to create desktops apps using HTML, CSS,
-        and JavaScript that can run native on Mac, Windows, and Linux. More
-        information about the Electron platform is available at <a href="http://electron.atom.io">http://electron.atom.io</a></p>
-        
-        <ul>
-            <li><a href="https://github.com/bmorefield/netip-demo">Electron Demo App</a> for this month's presentation</li>
-            <li><a href="https://github.com/Kapeli/Dash-iOS">Dash</a> for iOS is now open source</li>
-            <li>Touch Bar resources</li>
-            <ul>
-              <li><a href="https://red-sweater.com/touche/">Touché</a> is a Touch Bar for everyone</li>
-              <li><a href="https://github.com/bikkelbroeders/TouchBarDemoApp">TouchBarDemoApp</a> allows you to use your macOS Touch Bar from an iPad</li>
-              <li><a href="https://github.com/steventroughtonsmith/TouchBarScreenshotter">TouchBarScreenshotter</a> to easily snap screenshots of the currently presented Touch Bar in macOS</li>
-            </ul>
-            <li>Beginning Metal course offered on <a href="https://www.raywenderlich.com/147786/new-course-beginning-metal">RayWenderlich.com</a></li>
-            <li><a href="http://cloudtools.bluemix.net">IBM Cloud Tools</a> for managing server and client-side Swift apps</li>
-            <li><a href="https://swift.org/blog/server-api-workgroup/">Server APIs Work Group</a> is now official</li>
-            <li><a href="https://scriptarian.com">Scriptarian</a> is a Swift scripting studio for macOS</li>
-        </ul>
-            
-        <p><samp>{ October 2016 }</samp></p>
-
-        <p>Joshua Miller will discuss the importance of iOS 10 sticker packs
-        and iMessage apps for businesses of all types. He will demonstrate the
-        easiest method for creating an iOS 10 sticker pack using Sketch and
-        transitioning to Xcode for testing. Additional in-depth options for
-        stickers exist including in-app purchases and wrapping the iMessage app
-        into an existing package.</p>
-
-        <ul>
-          <li><a href="https://medium.com/@rymcol/linux-ubuntu-benchmarks-for-server-side-swift-vs-node-js-db52b9f8270b#.8c8k5r26u">Linux benchmarks</a> for server side Swift vs Node.js</li>
-          <li>Why I'm not a React Native Developer by <a href="https://arielelkin.github.io/articles/why-im-not-a-react-native-developer.html">Ariel Elkin</a></li>
-          <li>Introducing the <a href="https://realm.io/news/introducing-realm-mobile-platform/">Realm Mobile Platform</a></li>
-          <li>Measurements and Units in Foundation by <a href="https://oleb.net/blog/2016/07/measurements-and-units/">Ole Begemann</a></li>
-          <li>Command Line Swift by <a href="http://www.russbishop.net/command-line-swift">Russ Bishop</a></li>
-        </ul>
-
-        <p><samp>{ September 2016 }</samp></p>
-
-        <p>Since the quarterly KnoxDevs event is the same week as CocoaHeads,
-        we encourage everyone to attend the KnoxDevs meeting on September 20th
-        to support the local tech community.</p>
-
-        <p><samp>{ August 2016 }</samp></p>
-
-        <p>This month we'll talk about Firebase and give away a ticket to Indie
-        DevStock in Nashville. Firebase has evolved into a full backend service
-        to provide developers with authentication, storage, analytics,
-        notifications, a realtime database, and other useful tools. Gavin
-        Wiggins, <a href="https://twitter.com/wigging">@wigging</a>, will give
-        an overview of the service along with a demo of Firebase features on
-        iOS. This month we will also give away a ticket (valued at $570) to the
-        upcoming Indie DevStock in Nashville on September 16-17. Don't worry if
-        you don't win the ticket, we also have discount codes for registration.
-        You must attend the meeting for a chance to win the ticket or get a
-        discount code.</p>
-
-        <ul>
-          <li>Sign up for <a href="http://www.metalthebook.com">Metal: The Comprehensive Guide in Swift</a></li>
-          <li>Face aware image views with <a href="https://littlebitesofcocoa.com/251-face-aware-image-views-with-aspectfillfaceaware">AspectFillFaceAware</a></li>
-          <li>Physically based rendering using <a href="https://medium.com/@avihay/amazing-physically-based-rendering-using-the-new-ios-10-scenekit-2489e43f7021#.bmu5jv725">iOS 10 SceneKit</a></li>
-          <li>Xcode visual memory <a href="http://useyourloaf.com/blog/xcode-visual-memory-debugger/">debugger</a></li>
-          <li>Books and videos available at <a href="https://www.raywenderlich.com/store">Ray Wenderlich Store</a> for learning iOS and Mac app development</li> 
-        </ul>
-
-        <p><samp>{ July 2016 }</samp></p>
-
-        <p>
-        To support the local tech community, we encourage everyone to attend
-        the CodeStock conference in downtown Knoxville this month on July 15
-        and 16. You can purchase your tickets at
-        http://www.codestock.org/tickets/. We will resume our usual monthly
-        meetings at the Knoxville Entrepreneur Center in August.
-        </p>
-
-        <p><samp>{ June 2016 }</samp></p>
-
-        <p>We'll have Bill Morefield,<a href="https://twitter.com/bmorefield">@bmorefield</a>, discuss Xamarin for building native Android, iOS, and Windows apps using a shared C# codebase. Anything you can do in Objective-C, Swift, or Java you can do in C# with Xamarin. Visit <a href="https://www.xamarin.com">https://www.xamarin.com</a> for more information.</p>
-
-        <ul>
-            <li><a href="https://talk.objc.io">Swift Talk</a> videos by the Objc.io folks</li>
-            <li><a href="https://firebase.google.com">Firebase</a> updated with new features</li>
-            <li>Convert After Effects animations to iOS code with <a href="http://www.marcuseckert.com/squall/">Squall</a></li>
-            <li>Presentation by <a href="http://blog.appbuilders.ch/2016/05/26/adrian-being-developer-after-40.html">Adrian Kosmaczewski</a> title "Being a Developer After 40"</li>
-            <li><a href="https://www.raywenderlich.com/135533/join-swift-algorithm-club">Swift Algorithm Club</a> as a free, open-source collection of algorithms and data structures</li>
-            <li>New App Store <a href="http://www.theverge.com/2016/6/8/11880730/apple-app-store-subscription-update-phil-schiller-interview">subscription</a> model</li>
-            <li><a href="http://9to5mac.com/2016/06/07/tensorflow-artificial-intelligence-ios/">TensorFlow</a> artificial intelligence platform available on iOS</li>
-            <li>WWDC 2016 highlights</li>
-            <ul>
-                <li>Next version of OS X called <a href="https://developer.apple.com/macos/">macOS Sierra</a></li>
-                <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> app for iPad</li>
-                <li>Work with Siri in iOS 10 with <a href="https://developer.apple.com/sirikit/">SiriKit</a></li>
-                <li>New <a href="https://developer.apple.com/imessage/">messages framework</a> in iOS 10</li>
-                <li>New file system APFS, see overview at <a href="http://dtrace.org/blogs/ahl/2016/06/19/apfs-part1/">Adam Leventhal's blog</a></li>
-            </ul>
-        </ul>
-
-        <p><samp>{ May 2016 }</samp></p>
-
-        <p>We don't have any presentations scheduled for this month, so leave a comment on Meetup of what you would like to talk about. If enough people show up, we'll raffle off another Big Nerd Ranch book.</p>
-
-        <ul>
-            <li>Shaving Our Image Size by <a href="http://engineering.dollarshaveclub.com/shaving-our-image-size/">Dollar Shave Club</a></li>
-            <li>Readable Content Guides by <a href="http://useyourloaf.com/blog/readable-content-guides/">Use Your Loaf</a></li>
-            <li><a href="http://scottjensen.design/2016/04/designing-an-alternative-to-the-hamburger-menu/">Designing</a> an alternative to the hamburger menu</li>
-            <li><a href="http://swiftwatch.net">SwiftWatch</a> as a way to share links to Swift resources</li>
-            <li>Introducing <a href="http://engineering.khanacademy.org/posts/introducing-swifttweaks.htm">SwiftTweaks</a> to adjust UI without recompilation</li>
-            <li>Getting started with <a href="http://iosdeveloperzone.com/2016/05/10/getting-started-with-modelio/">ModelIO</a></li>
-            <li>REST and JSON in Swift <a href="https://leanpub.com/b/restjsoninswift">bundle</a> discounted for limited time</li>
-            <li><a href="https://swift.org/blog/swift-3-0-release-process/">Swift 3.0</a> release process</li>
-            <li><a href="https://medium.com/the-traveled-ios-developers-guide/swift-3-feature-highlight-c38f94359731#.34azwaw3y">Swift 3 features</a> - the first evolution by Apple + community</li>
-        </ul>
-
-        <p><samp>{ April 2016 }</samp></p>
-
-        <p>This month we will have a presentation about using NSUserDefaults in Swift by Gavin Wiggins.  The NSUserDefaults class provides an interface to the user defaults database for Mac and iOS apps.  The most common use of this class is for storing user preferences that will persist between app launches or when the device is shutdown.</p>
-
-        <ul>
-            <li><a href="http://www.paintcodeapp.com/sketch">Code generator plugin</a> for Sketch</li>
-            <li>Google considering Swift for <a href="http://thenextweb.com/dd/2016/04/07/google-facebook-uber-swift/">Android development</a></li>
-            <li>The Case for Bringing Swift to the Server by <a href="http://www.infoq.com/presentations/swift-server?utm_campaign=This%2BWeek%2Bin%2BSwift&utm_medium=web&utm_source=This_Week_in_Swift_82">IBM Cloud</a></li>
-            <li>Introducing <a href="http://sunsetlakesoftware.com/2016/04/16/introducing-gpuimage-2-redesigned-swift">GPUImage 2</a>, redesigned in Swift</li>
-            <li><a href="https://developer.apple.com/wwdc/">WWDC 2016</a> announced for June 13-17, registration now open</li>
-            <li>Alternatives to WWDC Conferences <a href="https://medium.com/@iOSMacConfs/finding-san-francisco-too-expensive-you-aren-t-alone-a4ecc7871245#.862016163">sale</a></li>
-            <li>Xamarin now <a href="https://blog.xamarin.com/xamarin-for-all/">available as part of Visual Studio</a>.</li>
-            <li><a href="http://conceptdev.blogspot.com/2016/04/introducing-xamarin-workbooks.html">Introducing Xamarin Workbooks</a> - Playgrounds for Xamarin</li>
-        </ul>
-
-        <p><samp>{ March 2016 }</samp></p>
-
-        <p>This month we'll have a presention on <a href="http://www.couchbase.com">Couchbase</a> by Mike Hagedorn and an overview of <a href="https://www.raywenderlich.com/119949/top-five-markdown-editors">Markdown editors</a> by Bill Morefield.</p>
-
-        <ul>
-            <li>Apple TV tech talk <a href="https://developer.apple.com/videos/techtalks-apple-tv/">videos</a></li>
-            <li><a href="https://robots.thoughtbot.com/creating-your-first-ios-framework">Creating your first iOS framework</a> by Jake Craige</li>
-            <li>Server Side Swift</li>
-            <ul>
-                <li>IBM to bring <a href="http://www-03.ibm.com/press/us/en/pressrelease/49157.wss">Swift to the cloud</a></li>
-                <li><a href="https://medium.com/@LogMaestro/server-side-swift-c965b7ebe6e7#.ho8a43tf0">Hello Server Side Swift</a> by Logan Wright</li>
-                <li>Install <a href="http://cocoadevcentral.com/d/swift_kitura/">Swift and Kitura</a> on DigitalOcean</li>
-                <li><a href="https://developer.ibm.com/swift/2016/02/22/building-end-end-cloud-apps-using-swift-kitura/">Build End-to-End Cloud Apps using Swift with Kitura</a> from IBM developerWorks</li>
-            </ul>
-            <li><a href="https://medium.com/@mandrigin/ios-app-performance-instruments-beyond-48fe7b7cdf2#.3wl28p56l">iOS app performance: Instruments and beyond</a> by Igor M.</li>
-            <li>How to file a <a href="https://littlebitesofcocoa.com/201-how-to-file-a-bug-with-apple">bug report</a> with Apple</li>
-            <li><a href="https://medium.com/swift-programming/build-an-appstore-rating-tool-in-swift-3b88a6111541#.sqn2ite7u">Build an AppStore Rating Tool in Swift</a> by Keith Elliot</li>
-            <li><a href="http://nsdateformatter.com">NSDateFormatter.com</a> for easy date formatting in Swift or Objective-C</li>
-            <li><a href="https://dancounsell.com/articles/a-better-format-for-press-kits">A Better Format for Press Kits</a> by Dan Counsell</li>
-            <li>Dealing with <a href="http://commandshift.co.uk/blog/2015/09/23/dealing-with-web-services/">web services</a> in Swift from the Command Shift blog</li>
-            <li><a href="http://www.fivepackcreative.com/alt-u/">Alt-U</a> as a university for mobile app development</li>
-            <li><a href="http://lightpaper.42squares.in">LightPaper</a> is a simple, yet powerful text editor for Mac</li>
-            <li>Possible Sketch competitor from <a href="http://www.adobe.com/products/experience-design.html">Adobe Experience Design CC</a></li>
-            <li>Clearing <a href="https://littlebitesofcocoa.com/208-living-with-xcode-by-clearing-derived-data">derived data</a> in Xcode</li>
-            <li><a href="http://christiantietze.de/books/make-money-outside-mac-app-store-fastspring/">Ebook on Selling OS X apps outside the app store</a></li>
-            <li><a href="https://www.raywenderlich.com/119949/top-five-markdown-editors">Top Five Markdown Editors</a></li>
-          </ul>
-
-        <p><samp>{ February 2016 }</samp></p>
-
-        <p>David Levi will give an overview of CloudKit, Parse, and Deployd as a backend for iOS apps. His demo application is available on <a href="https://github.com/dblapps/BAASDemo">GitHub</a>.</p>
-
-        <ul>
-            <li>Top 5 Parse Alternatives on <a href="http://www.raywenderlich.com/126098/top-5-parse-alternatives">Ray Wenderlich</a></li>
-            <li>A <a href="https://github.com/relatedcode/ParseAlternatives">collaborative list</a> of Parse alternatives</li>
-            <li><a href="https://aws.amazon.com/mobile/">AWS Mobile SDK</a> as the fastest way to build mobile apps on AWS</li>
-            <li><a href="http://deployd.com">Deployd</a> as an open source backend and API for apps</li>
-            <li>Solve programming challenges on <a href="https://www.hackerrank.com">HackerRank</a></li>
-            <li><a href="http://www.couchbase.com">Couchbase</a> database for building web, mobile, and IoT applications</li>
-            <li><a href="https://developer.apple.com/swift/blog/?id=35">Interactive playgrounds</a> for iOS and OS X</li>
-            <li><a href="https://realm.io/news/seth-law-swift-security/">Swiftly Secure</a> video by Seth Law</li>
-            <li>Making the switch from Objective-C to Swift at <a href="https://www.skilled.io/keithsmiley/tales-of-a-rewrite-at-lyft">Lyft</a></li>
-            <li><a href="http://roadfiresoftware.com/parsing-json-in-swift/">Parsing JSON in Swift</a> book by Josh Brown</li>
-        </ul>
-
-        <p><samp>{ January 2016 }</samp></p>
-
-        <p>First <a href="http://knoxdevs.com">KnoxDevs</a> meeting at The Open Chord</p>
-
-        <hr>
-
-        <p>Previous monthly notes</p>
-
-        <p>
-            <a class="btn btn-default" href="2015.html" role="button" style="width:100px;">2015</a>
-            &nbsp;
-            <a class="btn btn-default" href="2014.html" role="button" style="width:100px;">2014</a>
-        </p>
-
-        <p style="margin-bottom:40px; margin-top:40px;"> <a href="#">Back to top...</a> </p>
-    </div>  <!-- end col Monthly Notes -->
-</div>  <!-- end row Monthly Notes-->
-
-</div>  <!-- end container Page Content -->
-
-</body>
+  </body>
 
 </html>
+

@@ -1,0 +1,4 @@
+collections:
+  years:
+    output: true
+

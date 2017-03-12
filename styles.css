@@ -1,70 +1,90 @@
-/* Styles
----------------------------------------------- */
+/* Bootstrap Overrides
+-----------------------------------------------------------------------------*/
+
+.container {
+  max-width: 800px;
+}
+
+.container .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron {
+  background: -moz-linear-gradient(90deg, #FC3832 0%, #F9AF4C 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F9AF4C), color-stop(100%, #FC3832)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #FC3832 0%, #F9AF4C 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #FC3832 0%, #F9AF4C 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #FC3832 0%, #F9AF4C 100%); /* ie10+ */
+  background: linear-gradient(0deg, #FC3832 0%, #F9AF4C 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9AF4C', endColorstr='#FC3832',GradientType=0 ); /* ie6-9 */
+  padding: 4px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 36px;
+  text-shadow: 1px 2px rgb(73, 73, 73);
+}
+
+.fa {
+  margin-right: 40px;
+}
+
+/* My Styles
+-----------------------------------------------------------------------------*/
 
 a {
-    color: #ACF2FF;
+    color: #FCC270;
     text-decoration: none;
 }
 
 a:hover {
-    color: yellow;
+    color: #FFF67E;
     text-decoration: none;
-}
+  }
 
 body {
-    background-color: rgb(72, 72, 72);;
-    color: white;
+  background-color: rgb(72, 72, 72);
+  color: white;
 }
 
 dl, li, p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
-
-hr {
-    border: 0;
-    height: 1px;
-    background-color: gray;
-}
-
-#logo {
-    height: 128px;
-    margin-top: 20px;
-    width: 128px;
-}
-
-.vertical-align {
-    background-color: red;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Media Styles
----------------------------------------------- */
-
-@media (min-width: 750px) {
-/* Desktop and similar screens */
-
-.container {
-    width: 750px;
-}
-
-}
-
-@media (max-width: 320px) {
-/* iPhone 5 and similar screens */
 
 h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Desktop and similar screens */
+
+@media (min-width: 750px) {
+
+  .container {
+    width: 750px;
+  }
+
+}
+
+/* iPhone 5 and similar screens */
+
+@media (max-width: 320px) {
+
+  h1 {
     font-size: 1.6em;
-}
+  }
 
-h3 {
+  h3 {
     font-size: 1.0em;
-}
+  }
 
-dl, li, p {
+  dl, li, p {
     font-size: 0.9em;
-}
+  }
 
 }
+
