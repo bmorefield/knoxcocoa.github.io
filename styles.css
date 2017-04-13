@@ -49,6 +49,7 @@ body {
 }
 
 dl, li, p {
+  color: rgb(226, 226, 226);
   font-size: 1.2em;
 }
 
