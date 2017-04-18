@@ -2,32 +2,33 @@
 ---------------------------------------------- */
 
 body {
-    background-color: #FC3832;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow: 1px 2px rgb(73, 73, 73);
+  background: rgb(237, 82, 63);
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px rgb(73, 73, 73);
 }
 
 h1 {
-    font-size: 38pt;
+  font-size: 38pt;
 }
 
 h2 {
-    font-size: 28pt;
+  font-size: 28pt;
 }
 
 i {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 #logo {
-    height: 256px;
-    width: 256px;
+  height: 256px;
+  width: 256px;
 }
 
 .vertical-align {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
